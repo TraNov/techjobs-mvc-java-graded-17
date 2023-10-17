@@ -28,9 +28,10 @@
 </div>
 
 <!--
- 3. Construct a table for each job, with one job field per row.
+  2. Adding the CSS class "job-listing" to a table provides some nice styling, courtesy of Carly’s work!
+  3. Construct a table for each job, with one job field per row.
 -->
-<table th:fragment="allJobs" class="job-listing" th:each="job: ${jobs}">
+<table th:fragment="displayJobs" class="job-listing" th:each="job: ${jobs}">
 
     <tr>
         <td>ID</td>

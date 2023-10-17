@@ -37,7 +37,10 @@
   <hr />
 
   <!-- TODO #4 - Loop over the search results to display all job fields. -->
-    <div th:replace="fragments :: allJobs"></div>
+    <!--
+      Use fragments.displayJobs to display each job passed in from the controller.
+   -->
+    <div th:replace="fragments :: displayJobs"></div>
 </div>
 
 </body>

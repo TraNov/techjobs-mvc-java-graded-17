@@ -12,14 +12,10 @@
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
   <!--
-  1. In list-jobs.html, create a loop to display each job passed in from the controller.
-     The job data should be presented in tables, with each job in its own table.
-     Be sure to check in ListController to find the variable names available to the template.
-  2. Adding the CSS class "job-listing" to a table provides some nice styling, courtesy of Carly’s work!
-  3. Construct a table for each job, with one job field per row.
+     Use fragments.displayJobs to display each job passed in from the controller.
   -->
 
-  <div th:replace="fragments :: allJobs"></div>
+  <div th:replace="fragments :: displayJobs"></div>
 </div>
 </body>
 </html>
